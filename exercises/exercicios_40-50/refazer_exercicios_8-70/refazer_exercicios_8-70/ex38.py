@@ -1,0 +1,12 @@
+numero = int(input("Digite um número para gerar a tabuada: "))
+
+print(str(numero) + " x 0 = " + str(numero * 0))
+print(str(numero) + " x 1 = " + str(numero * 1))
+print(str(numero) + " x 2 = " + str(numero * 2))
+print(str(numero) + " x 3 = " + str(numero * 3))
+print(str(numero) + " x 4 = " + str(numero * 4))
+print(str(numero) + " x 5 = " + str(numero * 5))
+print(str(numero) + " x 6 = " + str(numero * 6))
+print(str(numero) + " x 7 = " + str(numero * 7))
+print(str(numero) + " x 8 = " + str(numero * 8))
+print(str(numero) + " x 9 = " + str(numero * 9))
