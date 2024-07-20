@@ -2,7 +2,7 @@ class Pessoa:
     nome = 'Maria Clara '
     sobrenome = 'Carneiro'
     idade = 14
-    endereço : 'Rua das Flores, 123, São Paulo, SP '
+    endereço : 'Av extremidade (281) '
     
 
 
