@@ -17,7 +17,7 @@ class Pessoa:
     def novo_sobrenome(self):
         return self.sobrenome
 
-pessoa = Pessoa("Maria", "Clara", 14, "estudante")
+pessoa = Pessoa("Maria", "Clara carneiro", 14, "estudante")
 pessoa.nome = "Ana"
 pessoa.sobrenome = "Júlia"
 print(pessoa.novo_nome() + pessoa.novo_sobrenome())
