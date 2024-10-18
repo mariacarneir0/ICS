@@ -19,5 +19,5 @@ class Pessoa:
 
 pessoa = Pessoa("Maria", "Clara carneiro", 14, "estudante")
 pessoa.nome = "Ana"
-pessoa.sobrenome = "Júlia"
+pessoa.sobrenome = "Júlia mix "
 print(pessoa.novo_nome() + pessoa.novo_sobrenome())
