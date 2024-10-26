@@ -154,20 +154,19 @@ def ex17(request):
 def ex18(request):
     data = {}
     if request.method == 'POST':
-        cidade1 = request.POST.get("cidade1")
-        cidade2 = request.POST.get("cidade2")
-        junçao = str(cidade1) + " " + str(cidade2) +  " "
-        data['junçao'] = junçao
-    return render (request, 'ex18.html', data)
-
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " está a leste de " + str(palavra1)
+        data['frase'] = frase
+    return render(request, 'ex18.html', data)
 
 def ex19(request):
     data = {}
-    if request.method.get == 'POST':
-     nome = request.GET.get('nome', '')
-     saudaçao = input("Olá", nome)
-     data['saudaçao'] = saudaçao
-     return render (request, 'ex19.html', data)
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        frase = f'Olá {nome}'
+        data['frase'] = frase
+    return render (request, 'ex19.html', data)
 
 def ex20(request):
     data = {}
@@ -177,5 +176,3 @@ def ex20(request):
         total = int(valor1) + int(valor2)
         data['total'] = total
     return render(request, 'ex20.html', data)
-
-

@@ -6,16 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercicio 18</h1>
+    <h1>Exercício 18</h1>
+
+    <p>Escreva buritizeiro e logo após belo horizonte</p>
     <form method="POST">
         {% csrf_token %}
-        <br><input type="text" name="cidade1"></br>
-        <br><input type="text" name="cidade2"></br>
-        <br><button type="text">Enviar</button>
-    </form>
+        <input type="text" name="palavra2" required>
+        <input type="text" name="palavra1" required>
+        <button type="submit">Enviar</button>
 
-    {% if cidades %}
-        <h2>{{cidade1}} está a leste de {{cidade2}}</h2>
+        {% if frase %}
+        <h2>{{frase}}</h2>
     {% endif %}
-</body>
-</html>
+
+    </form>

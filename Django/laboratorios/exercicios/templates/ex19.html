@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercicio 19</h1>
+    <h1>Exercício 19</h1>
+    
+    <p>escreva seu nome</p>
     <form method="POST">
         {% csrf_token %}
-        <br><input type="text" name="cidade1"></br>
-        <br><input type="text" name="cidade2"></br>
-        <br><button type="text">Enviar</button>
+        <input type="text" name="nome">
+        <button type="submit">Enviar</button>
     </form>
-
-    {% if nome %}
-        <p>O resultado fica: Olá, {{ nome }}!</p>
+    {% if frase %}
+        <h2>{{frase}}</h2>
     {% endif %}
+</body>
 </html>
