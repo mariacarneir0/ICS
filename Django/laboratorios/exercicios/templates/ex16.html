@@ -1,0 +1,15 @@
+<h1>exercicio 16</h1>
+
+<p>digite quatro numeros para descobrir a media deles</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="number" name="valor1">
+    <input type="number" name="valor2">
+    <input type="number" name="valor3">
+    <input type="number" name="valor4">
+    <button type="submit">Enviar</button>
+</form>
+
+{% if media %}
+    <h2>a media desses numeros é: {{media}}</h2>
+{% endif %}

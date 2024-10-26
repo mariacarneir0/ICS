@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exercicio 6</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <br><input type="text" name="palavra1"></br>
+        <br><input type="text" name="palavra2"></br>
+        <br><input type="text" name="palavra3"></br>
+        <br><input type="text" name="palavra4"></br>
+        <br><input type="text" name="palavra5"></br>
+        <br><button type="submit">Enviar</button>
+    </form>
+    
+    {% if frase %}
+        <h2>sua frase é: {{frase}}</h2>
+    {% endif %}
+
+
+</body>
+</html>

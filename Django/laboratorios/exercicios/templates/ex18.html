@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 18</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <br><input type="text" name="cidade1"></br>
+        <br><input type="text" name="cidade2"></br>
+        <br><button type="text">Enviar</button>
+    </form>
+
+    {% if cidades %}
+        <h2>{{cidade1}} está a leste de {{cidade2}}</h2>
+    {% endif %}
+</body>
+</html>

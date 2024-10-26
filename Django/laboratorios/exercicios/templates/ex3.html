@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <p>Exiba seu nome e sua idade na tela</p>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="nome">
+        <input type="text" name="idade">
+        <button type="submit">Enviar</button>
+    </form>
+    {% if frase %}
+        <h2>{{frase}}</h2>
+    {% endif %}
+</body>
+</html>
